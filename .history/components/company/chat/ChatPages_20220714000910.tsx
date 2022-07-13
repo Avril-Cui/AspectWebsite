@@ -86,6 +86,9 @@ export function Landing() {
             <ul className={styles.chat_room_list}>
             <li key={"main"}>
               <div>
+                <button onClick={() => setChat("main")}>Main</button>
+              </div>
+              <div>
                 <button>
                   <Link className={styles.section} href="/login/login">
                     Main
@@ -94,6 +97,11 @@ export function Landing() {
               </div>
             </li>
             <li key={"fundamental"}>
+              <div>
+                <button onClick={() => setChat("fundamental")}>
+                  Fundamental
+                </button>
+              </div>
               <div>
                 <button>
                   <Link className={styles.section} href="/login/login">
@@ -104,6 +112,11 @@ export function Landing() {
             </li>
             <li key={"technical"}>
               <div>
+                <button onClick={() => setChat("technical")}>
+                  Technical
+                </button>
+              </div>
+              <div>
                 <button>
                   <Link className={styles.section} href="/login/login">
                     Technical
@@ -112,6 +125,11 @@ export function Landing() {
               </div>
             </li>
             <li key={"quantitative"}>
+              <div>
+                <button onClick={() => setChat("quantitative")}>
+                  Quantitative
+                </button>
+              </div>
               <div>
                 <button>
                   <Link className={styles.section} href="/login/login">

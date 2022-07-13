@@ -55,28 +55,28 @@ export function Landing() {
           <h2 className={styles.pick}>Choose a Chat Room</h2>
           {user ? (
             <ul className={styles.chat_room_list}>
-              <li key={"Main"}>
+              <li key={"main"}>
                 <div>
-                  <button onClick={() => setChat("Main")}>Main</button>
+                  <button onClick={() => setChat("main")}>Main</button>
                 </div>
               </li>
-              <li key={"Fundamental"}>
+              <li key={"fundamental"}>
                 <div>
-                  <button onClick={() => setChat("Fundamental")}>
+                  <button onClick={() => setChat("fundamental")}>
                     Fundamental
                   </button>
                 </div>
               </li>
-              <li key={"Technical"}>
+              <li key={"technical"}>
                 <div>
-                  <button onClick={() => setChat("Technical")}>
+                  <button onClick={() => setChat("technical")}>
                     Technical
                   </button>
                 </div>
               </li>
-              <li key={"Quantitative"}>
+              <li key={"quantitative"}>
                 <div>
-                  <button onClick={() => setChat("Quantitative")}>
+                  <button onClick={() => setChat("quantitative")}>
                     Quantitative
                   </button>
                 </div>
@@ -85,6 +85,9 @@ export function Landing() {
           ) : (
             <ul className={styles.chat_room_list}>
             <li key={"main"}>
+              <div>
+                <button onClick={() => setChat("main")}>Main</button>
+              </div>
               <div>
                 <button>
                   <Link className={styles.section} href="/login/login">
@@ -95,6 +98,11 @@ export function Landing() {
             </li>
             <li key={"fundamental"}>
               <div>
+                <button onClick={() => setChat("fundamental")}>
+                  Fundamental
+                </button>
+              </div>
+              <div>
                 <button>
                   <Link className={styles.section} href="/login/login">
                     Fundamental
@@ -104,6 +112,11 @@ export function Landing() {
             </li>
             <li key={"technical"}>
               <div>
+                <button onClick={() => setChat("technical")}>
+                  Technical
+                </button>
+              </div>
+              <div>
                 <button>
                   <Link className={styles.section} href="/login/login">
                     Technical
@@ -112,6 +125,11 @@ export function Landing() {
               </div>
             </li>
             <li key={"quantitative"}>
+              <div>
+                <button onClick={() => setChat("quantitative")}>
+                  Quantitative
+                </button>
+              </div>
               <div>
                 <button>
                   <Link className={styles.section} href="/login/login">
