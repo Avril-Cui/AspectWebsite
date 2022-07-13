@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import Link from "next/link";
+import { chatRooms } from "../../../chatRoom";
 import styles from "./landing.module.css";
 import Fundamental from "./ChatRoom/fundamental";
 import Technical from "./ChatRoom/technical";
@@ -26,13 +27,6 @@ export function Landing() {
   const [chat, setChat] = useState("FrontPage");
   const { user, logout } = useAuth();
   const router = useRouter();
-
-  const chatRooms = [
-    { id: 'Main', title: 'Main' },
-    { id: 'Fundamental', title: 'Fundamental' },
-    { id: 'Technical', title: 'Technical' },
-    { id: 'Quantitative', title: 'Quantitative' },
-];
   return (
     <>
       {chat === "FrontPage" && (

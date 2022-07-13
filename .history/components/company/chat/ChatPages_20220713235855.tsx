@@ -26,13 +26,6 @@ export function Landing() {
   const [chat, setChat] = useState("FrontPage");
   const { user, logout } = useAuth();
   const router = useRouter();
-
-  const chatRooms = [
-    { id: 'Main', title: 'Main' },
-    { id: 'Fundamental', title: 'Fundamental' },
-    { id: 'Technical', title: 'Technical' },
-    { id: 'Quantitative', title: 'Quantitative' },
-];
   return (
     <>
       {chat === "FrontPage" && (
@@ -61,20 +54,45 @@ export function Landing() {
 
           <h2 className={styles.pick}>Choose a Chat Room</h2>
           <ul className={styles.chat_room_list}>
-            {chatRooms.map((room) => (
-              <li key={room.id}>
-                {user ? (
-                  <button onClick={() => setChat(room.id)}>{room.title}</button>
-                ) : (
+            <li key={"main"}>
+              {user ? (
+                <div>
+                  <button onClick={() => setChat("main")}>Main</button>
+                  <button onClick={() => setChat("fundamental")}>
+                    Fundamental
+                  </button>
+                  <button onClick={() => setChat("technical")}>
+                    Technical
+                  </button>
+                  <button onClick={() => setChat("quantitative")}>
+                    Quantitative
+                  </button>
+                </div>
+              ) : (
+                <div>
                   <button>
                     <Link className={styles.section} href="/login/login">
-                      {room.title}
+                      Main
                     </Link>
                   </button>
-                )}
-                {/* <Link to={`/room/${room.id}`}>{room.title}</Link> */}
-              </li>
-            ))}
+                  <button>
+                    <Link className={styles.section} href="/login/login">
+                      Fundamental
+                    </Link>
+                  </button>
+                  <button>
+                    <Link className={styles.section} href="/login/login">
+                      Technical
+                    </Link>
+                  </button>
+                  <button>
+                    <Link className={styles.section} href="/login/login">
+                      Quantitative
+                    </Link>
+                  </button>
+                </div>
+              )}
+            </li>
           </ul>
         </div>
       )}
