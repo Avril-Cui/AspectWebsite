@@ -1,0 +1,23 @@
+.pick{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.chat_room_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.chat_room_list li {
+    background-color: #585858;
+    height: 100px;
+    background: var(--color-gray);
+    flex: 1 1 calc(50% - 4px);
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

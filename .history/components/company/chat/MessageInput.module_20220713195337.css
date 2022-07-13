@@ -1,0 +1,20 @@
+.input_box{
+    background-color: #1f1f1f;
+}
+
+.message_input_container {
+    display: flex;
+}
+
+.message_input {
+    flex: 1;
+    background-color: #3f3f3f;
+}
+
+.send_message {
+    padding: 12px 14px;
+    background: var(--color-blue);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    color: #C3FCC2;
+}

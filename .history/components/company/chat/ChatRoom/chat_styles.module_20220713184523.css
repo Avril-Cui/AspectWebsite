@@ -1,0 +1,12 @@
+.messages_container {
+    width: 300px;
+    height: 500px;
+    background-color: #292929;
+}
+
+.back_link{
+    color: #dadada;
+    font-size: 18px;
+    font-weight: 300;
+
+}

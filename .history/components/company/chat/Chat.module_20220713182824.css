@@ -1,0 +1,28 @@
+.chat_header{
+    background-color: #1f1f1f;
+    display: inline-flex;
+}
+
+.icon {
+    font-size: 20px;
+    padding: 0.25em;
+}
+
+.button_login{
+    padding-left: 16.5em;
+}
+
+
+
+/* .messages_container {
+    width: 300px;
+    height: 500px;
+    background-color: aqua;
+    padding: 16px;
+    flex-grow: 1;
+    border: 1px solid var(--color-gray);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+} */
