@@ -1,0 +1,46 @@
+.stats_info_table{
+    margin-top: -1.5em;
+    margin-left: 14em;
+}
+
+.stats_info_table td{
+    color: #979797;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 0em 1.5em;
+}
+
+.stats_info_table td button:hover{
+    border-bottom: 2px solid #72B176;
+    padding-bottom: 3px;
+    cursor: pointer;
+}
+
+.stats_info_table td button:focus{
+    border-bottom: 2px solid #72B176;
+    padding-bottom: 3px;
+    cursor: pointer;
+}
+
+.graph{
+    margin-top: 0.5em;
+    margin-left: 0.35em;
+}
+
+.valuation_text{
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.ratio_type_g{
+    color: #72B176;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.ratio_type_r{
+    color: #FD6565;
+    font-weight: 400;
+    font-size: 16px;
+}
